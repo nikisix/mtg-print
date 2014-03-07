@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 """
-Input csv format: Amount Name
+Input file format: Amount Name
 10 Swamp
 1 Mountain of Doom
 
@@ -85,8 +85,10 @@ def download_missing_images(deck, images_full_path):
 
 def print_pdf(deck, input_filename, output_path, images_full_path):
     #card size in mm
-    CARD_WIDTH = 63
-    CARD_HEIGHT = 88
+    #CARD_WIDTH = 63 #original  
+    #CARD_HEIGHT = 88
+    CARD_WIDTH = 66
+    CARD_HEIGHT = 90
     
     padding_left = (A4[0] - 3*CARD_WIDTH*mm) / 2
     padding_bottom = (A4[1] - 3*CARD_HEIGHT*mm) / 2
